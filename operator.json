@@ -1,10 +1,17 @@
 {
-  "name": "Template R operator",
-  "description": "Return the medium value of a cell",
-  "tags": ["template"],
+  "name": "Concatenate operator",
+  "description": "Concatenate different columns into a single one.",
+  "tags": ["data wrangling", "text processing", "text manipulation"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_R_operator"],
-  "properties": []
+  "urls": ["https://github.com/tercen/concatenate_operator"],
+  "properties": [
+    {
+    "kind": "StringProperty",
+    "name": "sep",
+    "defaultValue": "_",
+    "description": "Separator"
+    }
+  ]
 }
 
 
