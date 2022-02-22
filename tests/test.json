@@ -1,0 +1,13 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "concatenate",
+  "namespace": "ds0",
+  "inputDataUri": "c03_simple_exp.tsv",
+  "outputDataUri": ["table1.csv","table2.csv"],
+  "columns": [],
+  "rows": ["Observation","Variable"],
+  "colors": [],
+  "labels": [],
+  "yAxis": "",
+  "xAxis": ""
+}
