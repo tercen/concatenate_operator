@@ -1,6 +1,6 @@
 {
   "name": "Concatenate",
-  "description": "Joins the contents of multiple text columns into a single string of text.",
+  "description": "Merges the contents of multiple text columns into a single text string.",
   "tags": [
     "preprocessing",
     "text processing"
