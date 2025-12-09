@@ -1,10 +1,17 @@
 {
   "name": "Concatenate",
-  "description": "Concatenates strings contained in different variables.",
-  "tags": ["text processing", "data transformation"],
+  "description": "Merges the contents of multiple text columns into a single text string.",
+  "tags": ["preprocessing", "text processing"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/concatenate_operator"],
-  "properties": [],
+  "properties": [
+    {
+      "kind": "StringProperty",
+      "name": "sep",
+      "defaultValue": "_",
+      "description": "Separator"
+    }
+  ],
   "operatorSpec": {
     "kind": "OperatorSpec",
     "ontologyUri": "https://tercen.com/_ontology/tercen",
