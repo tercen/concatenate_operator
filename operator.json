@@ -1,9 +1,16 @@
 {
   "name": "Concatenate",
   "description": "Merges the contents of multiple text columns into a single text string.",
-  "tags": ["preprocessing", "text processing"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/concatenate_operator"],
+  "tags": [
+    "preprocessing",
+    "text processing"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/concatenate_operator"
+  ],
   "properties": [
     {
       "kind": "StringProperty",
@@ -32,6 +39,36 @@
           }
         ],
         "axis": []
+      }
+    ],
+    "outputSpecsV2": [
+      {
+        "kind": "OperatorJoinSpec",
+        "joinOperators": [
+          {
+            "kind": "JoinOperator",
+            "joinType": "left",
+            "leftPair": {
+              "kind": "ColumnPair",
+              "lColumns": [
+                "Variable"
+              ],
+              "rColumns": [
+                "Variable"
+              ]
+            },
+            "rightRelation": {
+              "kind": "TableRelation",
+              "attributes": [
+                {
+                  "kind": "Attribute",
+                  "name": "concatenated",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   }
